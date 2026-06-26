@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Converter</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="bg-waves"></div>
+
+<div class="container">
+    <h1>Invoice <span>Converter</span></h1>
+    <p class="subtitle">
+        Turn raw TXT invoices into clean Excel reports in seconds
+    </p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <div class="file-box">
+            <input type="file" name="invoice" accept=".txt" required>
+        </div>
+
+        <button type="submit">
+            Convert & Download Excel
+        </button>
+    </form>
+
+    <p class="note">
+        Upload <strong>invoices.txt</strong><br>
+        Receive a structured <strong>result.xlsx</strong> instantly
+    </p>
+</div>
+
+</body>
+</html>
